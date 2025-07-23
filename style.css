@@ -112,3 +112,42 @@ footer {
   padding: 15px 0;
   margin-top: 40px;
 }
+/* Responsive styling */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero .content {
+    flex-direction: column;
+  }
+
+  .hero .text, .hero .image {
+    width: 100%;
+  }
+
+  .hero .image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects .cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  h2, h3, h4, p {
+    font-size: 1.1rem;
+  }
+}
